@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 export default class SearchBar extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       searchedValue: "",
     };
@@ -24,7 +24,7 @@ export default class SearchBar extends Component {
     return (
       <div>
         <form onSubmit={(event) => this.handleSubmit(event)}>
-          <input type="text" onChange={(event) => this.handleChange(event)} id="test" value={this.state.searchedValue} />
+          <input type="text" onChange={(event) => this.handleChange(event)} value={this.state.searchedValue} />
           <input type="submit"></input>
         </form>
       </div>

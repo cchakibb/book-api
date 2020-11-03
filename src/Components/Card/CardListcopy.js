@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Card from "./Card";
 
-function CardList(props) {
+function CardList2(props) {
   console.log("test", props.cards);
   return (
     <>
@@ -18,4 +18,4 @@ function CardList(props) {
   );
 }
 
-export default CardList;
+export default CardList2;
